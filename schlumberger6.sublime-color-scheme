@@ -1,0 +1,194 @@
+{
+    "name": "schlumberger6",
+    "author": "Maxence Godeneche @mgodeneche",
+    "variables":
+    {
+        "blue": "dodgerblue",
+        "grey": "hsl(55,8% 26%)",
+        "dark-grey" : "hsl(0°, 0%, 15%)",
+        "light-grey" : "hsl(354, 0%, 49%)",
+        "purple" : "hsl(283, 72%, 50%)",
+        "yellow1" : "hsl(55, 85%, 33%)",
+        "red":"hsl(360,100%,60%)",
+        "dark-red" : "hsl(360, 100%, 18%)",
+        "dark-blue" : "hsl(232, 24%, 15%)",
+        "seagreen":"seagreen",
+        "fore" : "white",
+        //"back" : "darkslateblue",
+        "back" : "darkslategray"
+    },
+    "globals":
+    {
+        "foreground":"var(fore)",
+        "background": "color(var(back) l(25%))",
+        "caret" : "var(fore)",
+        "line_highlight": "color(var(back) l(-15%))",
+        "selection": "color(var(back) l(-15%))",
+    },
+    "rules":
+    [
+        {
+            "scope" : "red",
+            "foreground" : "var(red)"
+        },
+        {
+            "scope" : "yellow",
+            "foreground" : "var(yellow1)"
+        },
+        {
+            "scope" : "blue",
+            "foreground" : "dodgerblue"
+        },
+        {
+            "name": "ligneTropLongue",
+            "scope": "invalid.illegal",
+            "foreground": "var(red)",
+            "background" : "color(var(red) l(10%))",
+            "line_highlight": "var(red)",
+            "font_style":"bold"
+        },
+        {
+            "name": "ligne0",
+            "scope": "comment.line",
+            "foreground": "var(light-grey)",
+            "font_style":"italic"
+        },
+        {
+            "name":"IndicateurLigne",
+            "scope":"entity.ligne.type",
+            "font_style":"bold",
+            "foreground":"var(seagreen)"
+        },
+        {
+            "name":"IndicateurLigne2",
+            "scope":"entity.ligne.type2",
+            "font_style":"bold",
+            "foreground":"color(var(seagreen) l(60%))"
+        },
+        {
+            "name": "refUex",
+            "scope": "entity.ligne.refUex",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "beep",
+            "scope": "entity.ligne.beep",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "idptc",
+            "scope": "entity.ligne.idPtc",
+            "foreground": "var(yellow1)"
+        },
+        {
+            "name": "index",
+            "scope": "entity.ligne.index",
+            "foreground": "var(red)",
+            "font_style":"bold"
+        },
+        {
+            "name": "code obs",
+            "scope": "entity.ligne.codeObs",
+            "foreground": "seagreen",
+        },
+        {
+            "name": "code obs",
+            "scope": "entity.ligne.codeObs1",
+            "foreground": "lightblue",
+        },
+        {
+            "name": "code obs",
+            "scope": "entity.ligne.codeObs2",
+            "foreground": "lightpink",
+        },
+        {
+            "name": "consommation",
+            "scope": "entity.ligne.consommation",
+            "foreground": "mediumaquamarine",
+            "font_style":"bold"
+        },
+        {
+            "name": "fluide",
+            "scope": "entity.ligne.fluide",
+            "foreground": "aqua",
+            "background" : "color(var(back) l(35%))"
+        },
+         {
+            "name": "index i-1",
+            "scope": "entity.ligne.index1",
+            "foreground": "color(var(red) l(50%))",
+        },
+        {
+            "name": "index i-2",
+            "scope": "entity.ligne.index2",
+            "foreground": "color(var(red) l(60%))",
+        },
+        {
+            "name": "index i-3",
+            "scope": "entity.ligne.index3",
+            "foreground": "color(var(red) l(70%))",
+        },
+        {
+            "name": "index i-4",
+            "scope": "entity.ligne.index4",
+            "foreground": "color(var(red) l(80%))",
+        },
+        {
+            "name": "code Forfait",
+            "scope": "entity.ligne.codeForfait",
+            "foreground": "var(purple)",
+            "background": "color(var(back) l(35%))"
+        },
+        {
+            "name": "num compteur",
+            "scope": "entity.ligne.numCompteur",
+            "foreground": "var(purple)",
+        },
+         {
+            "name": "code emplacement",
+            "scope": "entity.ligne.codeEmplacement",
+            "foreground": "darkorange",
+        },
+        {
+            "name": "date depose",
+            "scope": "entity.ligne.dateDepose",
+            "foreground": "thistle",
+        },
+        {
+            "name": "ref logement",
+            "scope": "entity.ligne.refLogement",
+            "foreground": "lime",
+        },
+        {
+            "name": "date relève",
+            "scope": "entity.ligne.dateReleve",
+            "foreground": "color(var(red) l(15%))"
+        },
+        {
+            "name": "date relève1",
+            "scope": "entity.ligne.dateReleve1",
+            "foreground": "color(var(red) l(35%))",
+        },
+        {
+            "name": "date relève2",
+            "scope": "entity.ligne.dateReleve2",
+            "foreground": "color(var(red) l(50%))",
+        },
+        {
+            "name": "date relève3",
+            "scope": "entity.ligne.dateReleve3",
+            "foreground": "color(var(red) l(75%))",
+        },
+        {
+            "name": "date relève4",
+            "scope": "entity.ligne.dateReleve4",
+            "foreground": "color(var(red) l(100%))",
+        },
+        
+
+
+
+        
+    
+    ]
+}

@@ -1,0 +1,61 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/3/syntax.html
+name: schlumberger6 
+file_extensions: [TXT, txt]
+scope: source
+version : 2
+
+contexts:
+  main:
+    #Ligne trop longue 
+    - match: (?<=^.{128}).*
+      scope: invalid.illegal
+    #Ligne de commentaire
+    - match: ^0.{127}
+      scope: comment.line
+
+    #Ligne de type 1
+    - match : (?<code_enregistrement>[1-9]{1})(?<codeUex>\d{12})(\s{7})(?<dateRlv>\d{6})(?<dateRlv1>\d{6})(?<dateRlv2>\d{6})(?<dateRlv3>\d{6})(?<dateRlv4>\d{6})
+      captures:
+        1: entity.ligne.type2
+        2: entity.ligne.refUex
+        #empty
+        4: entity.ligne.dateReleve
+        5: entity.ligne.dateReleve1
+        6: entity.ligne.dateReleve2
+        7: entity.ligne.dateReleve3
+        8: entity.ligne.dateReleve4
+
+
+    #Ligne de type 2
+    - match : ^(?<code_enregistrement>[1-9]{1})(?<uex>\d{6})(?<beep>\d{10})(?<idPtc>\d{2})(?<index>\d{5})(\s)(?<codeObsRlv>\d{2})(?<codeObs1>\d{2})(?<codeObs2>\d{2})(?<consoCompteur>\S{5})(\s)(?<fluide>[C,F,K])(?<index1>\d{5})(?<codeForfaitI1>\s)(?<index2>\d{5})(?<codeForfaitI2>\s)(?<index3>\d{5})(?<codeForfaitI3>\s)(?<index4>\d{5})(?<codeForfaitI4>\s)(?<numCompteur>\d{9})(\s)(?<emplacement>\D{3})(\s{5})(?<dateDepose>\d{6})(\s{2})(?<refLogement>.{20})
+      captures:
+        1: entity.ligne.type
+        2: entity.ligne.refUex
+        3: entity.ligne.beep
+        4: entity.ligne.idPtc
+        5: entity.ligne.index
+        #empty
+        7: entity.ligne.codeObs
+        8: entity.ligne.codeObs1
+        9: entity.ligne.codeObs2
+        10: entity.ligne.consommation
+        #empty
+        12: entity.ligne.fluide
+        13: entity.ligne.index1
+        14: entity.ligne.codeForfait
+        15: entity.ligne.index2
+        16: entity.ligne.codeForfait
+        17: entity.ligne.index3
+        18: entity.ligne.codeForfait
+        19: entity.ligne.index4
+        20: entity.ligne.codeForfait
+        21: entity.ligne.numCompteur
+        #empty
+        23: entity.ligne.codeEmplacement
+        #empty
+        25: entity.ligne.dateDepose
+        #empty
+        27: entity.ligne.refLogement
+
