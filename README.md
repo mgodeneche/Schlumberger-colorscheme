@@ -7,3 +7,6 @@ Coloration Positionnelle pour Sublime Text 4
 - Prends en compte les lignes trop longues avec une background rouge pour signifier l'anomalie
  
 
+Changements à venir : 
+- Gestion du format date 8
+- Gestion des lignes de type 4 
