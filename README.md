@@ -1,6 +1,8 @@
 # Schlumberger6-colorscheme
 Coloration Positionnelle pour Sublime Text 4
 
+- Gestion des fichiers Schlumberger 6
+- Gestion des fichiers Schlumberger 8
 - Identifie les différents types de lignes
 - Grise les lignes de codes observations en début de fichier
 - Associe une couleur à chaque donnée pour plus de lisibilité 
@@ -8,5 +10,5 @@ Coloration Positionnelle pour Sublime Text 4
  
 
 Changements à venir : 
-- Gestion du format date 8
+
 - Gestion des lignes de type 4 
