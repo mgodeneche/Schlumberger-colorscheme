@@ -1,2 +1,12 @@
 # Schlumberger6-colorscheme
- Schlumberger Syntax color
+Coloration Positionnelle pour Sublime Text 4
+
+- Identifie les différents types de lignes
+- Grise les lignes de codes observations en début de fichier
+- Associe une couleur à chaque donnée pour plus de lisibilité 
+- Prends en compte les lignes trop longues avec une background rouge pour signifier l'anomalie
+ 
+
+Changements à venir : 
+- Gestion du format date 8
+- Gestion des lignes de type 4 
