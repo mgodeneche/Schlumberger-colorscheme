@@ -48,6 +48,12 @@
             "font_style":"bold"
         },
         {
+            "name": "Fin de ligne",
+            "scope": "entity.eol",
+            "foreground": "orange",
+            "font_style":"bold"
+        },
+        {
             "name": "ligne0",
             "scope": "comment.line",
             "foreground": "var(light-grey)",
