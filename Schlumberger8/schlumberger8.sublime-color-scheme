@@ -40,6 +40,12 @@
             "foreground" : "dodgerblue"
         },
         {
+            "name": "Fin de ligne",
+            "scope": "entity.eol",
+            "foreground": "orange",
+            "font_style":"bold"
+        },
+        {
             "name": "ligneTropLongue",
             "scope": "invalid.illegal",
             "foreground": "var(red)",
