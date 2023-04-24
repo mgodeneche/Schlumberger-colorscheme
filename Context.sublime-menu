@@ -1,0 +1,13 @@
+[
+    {
+        "caption": "Schlumberger",
+        "id": "mgo_schlumberger",
+        "children":
+        [
+          
+            { "command": "schlumberger_6", "caption": "Enable: Schlumberger 6" },
+            { "command": "schlumberger_8", "caption": "Enable: Schlumberger 8" },
+            { "command": "disable", "caption": "Disable" }
+        ]
+    }
+]
