@@ -1,4 +1,4 @@
-# Schlumberger6-colorscheme
+# Schlumberger-colorscheme
 Coloration Positionnelle pour Sublime Text 4
 
 - Gestion des fichiers Schlumberger 6
